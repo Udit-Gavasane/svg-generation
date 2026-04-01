@@ -36,7 +36,7 @@ svg-generation/
 ### Model Weights
 
 Pre-trained LoRA adapters are available on Google Drive:
-- **4-epoch adapter (primary submission)**: [svg_3b_adapter](https://drive.google.com/drive/folders/YOUR_LINK_HERE)
+- **4-epoch adapter**: [svg_3b_adapter](https://drive.google.com/drive/folders/1pDB6lZdPWiE1L4jTu_hbEx71y3kzfEZB?usp=sharing)
 
 ---
 
