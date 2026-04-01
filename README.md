@@ -6,7 +6,7 @@ NYU Tandon — Deep Learning (CS-GY 9223 / ECE-GY 7123) | Spring 2026
 
 This project fine-tunes a small language model to generate valid SVG (Scalable Vector Graphics) code from natural language text prompts. Given a description like "a red circle on white background", the model outputs valid SVG markup that visually matches the description.
 
-This was developed as part of the [Kaggle competition](https://www.kaggle.com/t/5c1b9c14c05c4bee82a0425c812e5ca4) for the NYU Deep Learning course.
+This was developed as part of the [Kaggle competition](https://www.kaggle.com/competitions/dl-spring-2026-svg-generation-from-text-prompts-extended-deadline) for the NYU Deep Learning course.
 
 
 ---
