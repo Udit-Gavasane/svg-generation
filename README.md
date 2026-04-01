@@ -20,6 +20,7 @@ svg-generation/
 │   └── Deep_Learning_Midterm_4.ipynb   # Full training pipeline
 ├── inference/
 │   └── generate.py                      # Local inference script
+│   └── generate.py output.txt           # inference console output
 └── results/
     └── submission_3b.csv                # Final submission file
 ```
