@@ -61,7 +61,7 @@ The dataset contains:
 
 Training was done on Google Colab with H100 80GB GPU using Unsloth for fast LoRA fine-tuning.
 
-### Training Run 1 — Primary (4 epochs, 47k samples)
+### Training Run — Primary (4 epochs, 47k samples)
 
 | Parameter | Value |
 |-----------|-------|
@@ -81,21 +81,6 @@ Training was done on Google Colab with H100 80GB GPU using Unsloth for fast LoRA
 | Training time | ~2 hours |
 
 Data filtering: SVGs between 200-6000 characters that start with `<svg`.
-
-### Training Run 2 — Continued Training (4 more epochs, 23k samples)
-
-Built on top of Training Run 1 adapter with cleaner data and lower learning rate.
-
-| Parameter | Value |
-|-----------|-------|
-| Starting weights | 4-epoch adapter |
-| Epochs | 4 additional |
-| Batch size | 4 |
-| Gradient accumulation | 8 (effective batch = 32) |
-| Learning rate | 5e-5 (reduced to prevent overwriting) |
-| Training samples | 23,342 (filtered to 200-2000 chars) |
-| GPU | G4 (T4) |
-| Training time | ~1.5 hours |
 
 To run training:
 1. Open `training/Deep_Learning_Midterm_4.ipynb` in Google Colab
@@ -117,7 +102,7 @@ pip install -r requirements.txt
 
 Download the adapter from Google Drive (link above) and place at:
 ```
-D:\path\to\svg_3b_adapter\
+/path/to/svg_3b_adapter/
 ```
 
 Update `ADAPTER_PATH` in `generate.py` to match your local path.
@@ -149,10 +134,6 @@ Each generated SVG goes through:
 6. Truncate to 8000 chars max
 7. Validate with `xml.etree.ElementTree`
 8. Fallback to black circle if invalid
-
----
-
-## Results
 
 
 ---
