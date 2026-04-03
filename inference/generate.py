@@ -13,9 +13,9 @@ warnings.filterwarnings("ignore")
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 
 BASE_MODEL = "Qwen/Qwen2.5-Coder-3B-Instruct"
-ADAPTER_PATH = r"D:\NYU Courses\Spring 2026\Deep Learning\Mid Term\svg_3b_adapter_8epochs"
-TEST_PATH = r"C:\Users\GUM\PycharmProjects\JupyterProject\data\test.csv"
-OUTPUT_PATH = r"C:\Users\GUM\PycharmProjects\JupyterProject\data\submission_3b_2.csv"
+ADAPTER_PATH = r"svg_3b_adapter"
+TEST_PATH = r"data\test.csv"
+OUTPUT_PATH = r"submission.csv"
 
 SYSTEM_PROMPT = "You are an SVG code generator. Given a description, output valid SVG code only. No explanations."
 
@@ -95,7 +95,6 @@ def generate_svg(prompt):
         )
 
     raw = tokenizer.decode(out[0][inputs["input_ids"].shape[1]:], skip_special_tokens=True)
-    print(f"RAW: {raw[:300]}")
 
     svg = SVG_REGEX.search(raw)
     svg = svg.group(0).strip() if svg else ""
