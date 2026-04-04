@@ -2,6 +2,10 @@
 
 NYU Tandon — Deep Learning (CS-GY 9223 / ECE-GY 7123) | Spring 2026
 
+Team: LoRA Lords
+
+Members: Udit Gavasane (umg215) and Alex Miller (amm10358)
+
 ## Overview
 
 This project fine-tunes a small language model to generate valid SVG (Scalable Vector Graphics) code from natural language text prompts. Given a description like "a red circle on white background", the model outputs valid SVG markup that visually matches the description.
