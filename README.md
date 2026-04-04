@@ -123,6 +123,10 @@ This generates `submission_3b.csv` with 1000 SVGs — one per test prompt.
 | repetition_penalty | None |
 | Fallback | Black circle SVG |
 
+> **Running on Google Colab?** Use `inference/inference_colab.ipynb` instead of `generate.py`.
+> It handles Drive mounting, Kaggle data download, and adapter loading automatically.
+> The adapter loads directly from the public Google Drive link.
+
 ### Post-processing
 
 Each generated SVG goes through:
